@@ -1,77 +1,80 @@
-# Boilerplate and Starter for React JS 18+, Material-UI, Tailwind CSS v3.3 and Typescript
+![reactjs-vite-tailwindcss-boilerplate](https://user-images.githubusercontent.com/16243531/217138979-b854309c-4742-4275-a705-f9fec5158217.jpg)
 
-<p align="center">
-<img src="public/assets/imgs/banner.png?raw=true" alt="React js starter banner" />
-</p>
+# React Tailwindcss Boilerplate build with Vite
 
-🚀🚀🚀 Boilerplate and Starter for React.js, Material-UI, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: React.js, TypeScript, Axios, ESLint, Prettier, Husky, Lint-Staged, VSCode, PostCSS, Tailwind CSS.
+This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
 
-Clone this project and use it to create your own [React.js](https://nextjs.org) project.
+## What is inside?
 
-### Features
+This project uses many tools like:
 
-- ⚡ [React.js](https://react.dev/)
-- ⚡ [Material-UI](https://mui.com/)
-- 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
-- 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- ✅ Strict Mode for TypeScript and React 18
-- 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS and Airbnb configuration)
-- 💖 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 Husky for Git Hooks
-- 🚫 Lint-staged for running linters on Git staged files
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript, Jest
+- [Vite](https://vitejs.dev)
+- [ReactJS](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Vitest](https://vitest.dev)
+- [Testing Library](https://testing-library.com)
+- [Tailwindcss](https://tailwindcss.com)
+- [Eslint](https://eslint.org)
+- [Prettier](https://prettier.io)
 
-### Requirements
+## Getting Started
 
-- Node.js 16+ and pnpm
+### Install
 
-### Getting started
+Create the project.
 
-Run the following command on your local environment:
+```bash
+pnpm dlx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+```
 
-```shell
-git clone --depth=1 https://github.com/sonht113/react-boilerplate-for-starter.git
-cd my-project-name
+Access the project directory.
+
+```bash
+cd my-app
+```
+
+Install dependencies.
+
+```bash
 pnpm install
 ```
 
-Then, you can run locally in development mode with live reload:
+Serve with hot reload at <http://localhost:5173>.
 
-```shell
+```bash
 pnpm run dev
 ```
 
-Open http://localhost:5173 with your favorite browser to see your project.
+### Lint
 
-```shell
-.
-├── README.md                       # README file
-├── .github                         # GitHub folder
-├── .husky                          # Husky configuration
-├── public                          # Public assets folder
-├── src
-│   ├── apis                        # Common apis folder
-│   ├── components                  # Component folder
-│   ├── data                        # Data constants JS Pages
-│   └── features                    # Features folder
-│   ├── hooks                       # Hooks customs folder
-│   ├── layout                      # Layout Pages
-│   └── pages                       # React JS Pages
-│   ├── provider                    # Provider folder
-│   └── routes                      # Routes folder
-│   ├── ts                          # Type and Enum folder
-│   ├── utils                       # Utility functions
-├── tailwind.config.js              # Tailwind CSS configuration
-└── tsconfig.json                   # TypeScript configuration
+```bash
+pnpm run lint
 ```
 
-### Customization
+### Typecheck
 
-- `src/index.css`: your CSS file using Tailwind CSS
-- `src/main.tsx`: default theme
+```bash
+pnpm run typecheck
+```
 
-You have access to the whole code source if you need further customization. The provided code is only example for you to start your project. The sky is the limit 🚀.
+### Build
 
----
+```bash
+pnpm run build
+```
 
-Made with ♥ by [TrongSon](https://www.facebook.com/profile.php?id=100032736788526&locale=vi_VN)
+### Test
+
+```bash
+pnpm run test
+```
+
+View and interact with your tests via UI.
+
+```bash
+pnpm run test:ui
+```
+
+## License
+
+This project is licensed under the MIT License.
