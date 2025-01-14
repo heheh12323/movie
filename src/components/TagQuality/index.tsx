@@ -1,6 +1,10 @@
-function TagQuality() {
+interface IQualityProps {
+  quality: string
+}
+
+function TagQuality({ quality }: Readonly<IQualityProps>) {
     return (
-      <div></div>
+      <div>{ quality }</div>
     )
   }
   
