@@ -1,9 +1,8 @@
 import Header from "./Header"
-import Banner from "./Banner"
 import Recently from "./Recently";
 import Trending from "./Trending";
 import Movie from "./Movie";
-
+import Banner from "./Banner";
 
 function App() {
   const movies = [
@@ -17,13 +16,15 @@ function App() {
   ];
   const type = "New Release - Movies";
   return (
-    <div className="max-w-[1170px] my-6 mx-auto">
-      <Header />
-      <Banner />
-      <Recently />
-      <Trending />
-      <Movie type={type} movies={movies}/>
-    </div>
+    <>
+      <Header/>
+      <Banner/>
+      <div className="max-w-[1170px] my-6 mx-auto">
+        <Recently />
+        <Trending />
+        <Movie type={type} movies={movies}/>
+      </div>
+    </>
   );
 }
 
