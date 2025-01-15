@@ -41,7 +41,7 @@ function Banner() {
         pagination={{ clickable: true }}
     >
       {dataBanner.map((data, index) => (
-        <SwiperSlide>
+        <SwiperSlide key={index}>
           <BannerItem
             name={data.name}
             img={data.img}

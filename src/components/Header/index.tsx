@@ -1,13 +1,14 @@
 import Login from "components/Login"
 import Signup from "components/Signup"
 import searchSvg from "assets/search.svg"
+import DropdownsList from "components/DropdownsList"
 
 function Header() {
     return (
       <div className="max-w-[1170px] my-6 mx-auto flex justify-between items-center font-semibold cursor-pointer mb-10">
         <ul className="flex gap-4">
-          <li>Home</li>
-          <li>Genre</li>
+          <li><a href="#">Home</a></li>
+          <DropdownsList categoryLabel="Genre" subCategories={["Genre1", "Genre2"]}/>
           <li>Country</li>
         </ul>
 
