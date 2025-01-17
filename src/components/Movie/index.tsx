@@ -1,4 +1,7 @@
+import TagMini from "components/TagMini";
 import TagQuality from "components/TagQuality";
+import durationSvg from "assets/duration.svg";
+import rightArrowSvg from "assets/right-arrow.svg";
 
 interface IMovie {
   name: string;
@@ -21,7 +24,7 @@ function Movie({ type, movies }: Readonly<IMovieProps>) {
           <div>View all</div>
           <img
             className="w-[22px] h-[20px] ml-2"
-            src="https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-arrow-right-thin.png"
+            src={rightArrowSvg}
             alt=""
           />
         </div>
@@ -32,23 +35,16 @@ function Movie({ type, movies }: Readonly<IMovieProps>) {
             key={`${movie.name}-${index}`}
             className="h-[392px] flex flex-col justify-between"
           >
-            <img alt="" className="h-[344px] rounded-lg" src={movie.image} />
+            <img alt="" className="h-[344px] rounded-lg object-cover" src={movie.image} />
             <div className="h-[32px] grid grid-cols-[55%_45%]">
               <div className="flex items-center overflow-hidden">
                 {movie.name}
               </div>
               <div className="flex items-center justify-between">
                 <TagQuality quality={movie.quality} />
-                <div className="border-2 border-red-500 rounded px-1">
+                <div className="border-[1px] border-red-500 rounded px-1">
                   {movie.time ? (
-                    <div className="flex items-center ">
-                      <img
-                        className="h-[13px] w-[13px] mr-1"
-                        src="https://www.svgrepo.com/show/187026/clock.svg"
-                        alt=""
-                      />
-                      {movie.time}
-                    </div>
+                    <TagMini svg={durationSvg} label={movie.time}/>
                   ) : (
                     <div>{movie.episode}</div>
                   )}
