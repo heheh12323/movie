@@ -1,6 +1,12 @@
-function TagQuality() {
+interface IQualityProps {
+  quality: string
+}
+
+function TagQuality({ quality }: Readonly<IQualityProps>) {
     return (
-      <div></div>
+      <div className="bg-[#FF0000] px-1 rounded">
+        { quality }
+      </div>
     )
   }
   
